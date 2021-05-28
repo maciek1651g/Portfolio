@@ -33,9 +33,9 @@ const MainPage = () => {
                         <div className={styles.project}>
                             <div className={styles.projectImgContainer}>
                                 <div className={styles.projectImg}>
-
-                                        <img className={styles.projectImgContent} src="./img/app_project.jpg" alt="app_project"/>
-
+                                    <div className={styles.projectImgContent} >
+                                        <img src="./img/xamarin.jpg" alt="app_project"/>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.projectDescription}>
@@ -45,6 +45,31 @@ const MainPage = () => {
                                 </p>
                                 <h3>Link do projektu</h3>
                                 <a href="https://github.com/maciek1651g/inwentaryzacja"><div className={styles.projectLink}>Projekt aplikacji mobilnej</div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className={styles.sectionBlackMiddle}>
+                <div className={styles.contentBlack}>
+                    <div className={styles.projectContainer}>
+                        <div className={styles.project}>
+                            <div className={styles.projectDescription}>
+                                <h2>Aplikacja mobilna</h2>
+                                <p>
+                                    Projekt wykonany grupowo, w 16 osób, na zajęcia z Inżynierii Oprogramowania. Aplikacja służy do inwentaryzacji środków trwałych i potrafi, za pomocą kamery, odczytywać kody QR umieszczone na inwentaryzowanych przedmiotach oraz wyszukiwać o nich informację w bazie danych. Aplikacja została napisana w technologii Xamarin. W tym projekcie przypadło mi napisanie widoku skanowania, na którym został umieszczony podgląd z kamerki. Napisałem również część kodu odpowiedzialną za komunikację z API, w celu wysyłania i pobierania informacji do/z bazy danych.
+                                </p>
+                                <h3>Link do projektu</h3>
+                                <a href="https://github.com/maciek1651g/inwentaryzacja"><div className={styles.projectLink}>Projekt aplikacji mobilnej</div></a>
+                            </div>
+                            <div className={styles.projectImgContainer}>
+                                <div className={styles.projectImg}>
+                                    <div className={styles.projectImgContent} >
+                                        <img src="./img/xamarin.jpg" alt="app_project"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

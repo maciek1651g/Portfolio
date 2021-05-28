@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92fd7413-1d76-42a2-a32f-bfcac3b4e7ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/public/img/xamarin.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/MainPage/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/MainPage/MainPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/MainPage/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/MainPage/style.module.css" afterDir="false" />
     </list>
@@ -35,6 +35,9 @@
       <recent name="C:\Users\Maciek\Documents\github\portfolio\frontend\src" />
       <recent name="C:\Users\Maciek\Documents\github\portfolio" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Maciek\Documents\github\portfolio\frontend\public\img" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -48,7 +51,9 @@
       <workItem from="1621866565360" duration="91000" />
       <workItem from="1621890016335" duration="468000" />
       <workItem from="1621925938355" duration="7000" />
-      <workItem from="1622210779470" duration="6700000" />
+      <workItem from="1622210779470" duration="6852000" />
+      <workItem from="1622222276083" duration="610000" />
+      <workItem from="1622230576594" duration="1910000" />
     </task>
     <servers />
   </component>
