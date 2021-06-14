@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92fd7413-1d76-42a2-a32f-bfcac3b4e7ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/public/img/xamarin.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/MainPage/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/MainPage/MainPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/MainPage/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/MainPage/style.module.css" afterDir="false" />
@@ -54,6 +53,7 @@
       <workItem from="1622210779470" duration="6852000" />
       <workItem from="1622222276083" duration="610000" />
       <workItem from="1622230576594" duration="1910000" />
+      <workItem from="1623696079903" duration="5407000" />
     </task>
     <servers />
   </component>
