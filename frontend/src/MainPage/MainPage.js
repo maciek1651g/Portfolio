@@ -1,18 +1,56 @@
 import styles from './style.module.css';
+import React from "react";
+import pl from "./../languages/pl"
+import en from "./../languages/en"
 
 const MainPage = () => {
     const scrollToBottom = () => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
     }
 
+    const returnToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    React.useEffect(() => {
+        window.onscroll = () => {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                if(returnTopButton===false)
+                {
+                    setReturnTopButton(true);
+                }
+            } else {
+                if(returnTopButton===true)
+                {
+                    setReturnTopButton(false);
+                }
+            }
+        }
+    });
+
+    const changeLanguage = () => {
+        if(language===pl) setLanguage(en); else setLanguage(pl);
+    }
+
+    const [returnTopButton, setReturnTopButton] = React.useState(false);
+    const [language, setLanguage] = React.useState(pl);
+
     return (
         <>
             <div className={styles.sectionHeader}>
                 <header className={styles.header}>
                     <h1>Maciej Dominiak</h1>
-                    <div className={styles.contactButton} onClick={scrollToBottom}>
-                        <span>Kontakt</span>
+                    <div style={{display: "flex", flexDirection: "row"}}>
+                        <div className={styles.contactButton} onClick={scrollToBottom}>
+                            <span>
+                                {language.contact}
+                            </span>
+                        </div>
+                        <div className={styles.contactButton} onClick={changeLanguage}>
+                            {language.changeLanguageText}
+                        </div>
                     </div>
+
                 </header>
             </div>
 
@@ -22,7 +60,7 @@ const MainPage = () => {
                         <div className={styles.hello}>
                             <p style={{fontSize: "50px", color: "white"}}>Portfolio</p>
                             <p style={{fontSize: "20px", color: "#ABABAB"}}>
-                                Jestem studentem Szkoły Głównej Gospodarstwa Wiejskiego w Warszawie na kierunku Informatyka. Moją pasją jest programowanie. W przyszłości zamierzam rozwijać swoją wiedzę w tej dziedzinie tworząc coraz to nowsze projekty. Stworzyłem tą stronę by każdy mógł zobaczyć najciekawsze projekty, w których uczestniczyłem, bądź w całości wykonałem sam.
+                                {language.description}
                             </p>
                         </div>
                     </div>
@@ -42,12 +80,14 @@ const MainPage = () => {
                                 </div>
                             </div>
                             <div className={styles.projectDescription}>
-                                <h2>Aplikacja mobilna</h2>
+                                <h2>{language.titleProject1}</h2>
                                 <p>
-                                    Projekt wykonany grupowo, w 16 osób, na zajęcia z Inżynierii Oprogramowania. Aplikacja służy do inwentaryzacji środków trwałych i potrafi, za pomocą kamery, odczytywać kody QR umieszczone na inwentaryzowanych przedmiotach oraz wyszukiwać o nich informację w bazie danych. Aplikacja została napisana w technologii Xamarin. W tym projekcie przypadło mi napisanie widoku skanowania, na którym został umieszczony podgląd z kamerki. Napisałem również część kodu odpowiedzialną za komunikację z API, w celu wysyłania i pobierania informacji do/z bazy danych.
+                                    {language.descriptionProject1}
                                 </p>
-                                <h3>Link do projektu</h3>
-                                <a href="https://github.com/maciek1651g/inwentaryzacja"><div className={styles.projectLink}>Projekt aplikacji mobilnej</div></a>
+                                <h3>{language.linkToProjectText}</h3>
+                                <a href="https://github.com/maciek1651g/inwentaryzacja">
+                                    <div className={styles.projectLink}>{language.linkToProject1ButtonText}</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -60,14 +100,18 @@ const MainPage = () => {
                     <div className={styles.projectContainer}>
                         <div className={styles.project}>
                             <div className={styles.projectDescription}>
-                                <h2>Gra w memory</h2>
+                                <h2>{language.titleProject2}</h2>
                                 <p>
-                                    Projekt gry w memory wykonany przy użyciu HTML, CSS, JavaScript i PHP. W grze możemy wybrać tryb klasyczny, bądź tryb w którym pierwsza karta odsłaniana jest w losowy sposób co znacząco utrudnia rozgrywkę. Swój wynik można zapisać w bazie danych.
+                                    {language.descriptionProject2}
                                 </p>
-                                <h3>Link do projektu</h3>
-                                <a href="https://github.com/maciek1651g/memory"><div className={styles.projectLink}>Projekt gry na githubie</div></a>
-                                <h3>Link do Gry</h3>
-                                <a href="http://memory.42web.io/"><div className={styles.projectLink}>Gra w memory</div></a>
+                                <h3>{language.linkToProjectText}</h3>
+                                <a href="https://github.com/maciek1651g/memory">
+                                    <div className={styles.projectLink}>{language.linkToProject2ButtonText}</div>
+                                </a>
+                                <h3>{language.linkToGameProject2}</h3>
+                                <a href="http://memory.42web.io/">
+                                    <div className={styles.projectLink}>{language.linkToGameButtonTextProject2}</div>
+                                </a>
                             </div>
                             <div className={styles.projectImgContainer}>
                                 <div className={styles.projectImg}>
@@ -94,14 +138,18 @@ const MainPage = () => {
                                 </div>
                             </div>
                             <div className={styles.projectDescription}>
-                                <h2>Wyszukiwarka repozytoriów githuba</h2>
+                                <h2>{language.titleProject3}</h2>
                                 <p>
-                                    Projekt wyszukiwarki repozytoriów w serwisie github, po nazwie użytkownika. Aplikacja pobiera wszystkie repozytoria użytkownika o zadanej nazwie, sortuje je po liczbie gwiazdek i wyświetla na ekran.
+                                    {language.descriptionProject3}
                                 </p>
-                                <h3>Link do projektu</h3>
-                                <a href="https://github.com/maciek1651g/repos_github"><div className={styles.projectLink}>Repozytorium projektu</div></a>
-                                <h3>Link do aplikacji</h3>
-                                <a href="https://maciek1651g-github-repos.herokuapp.com/"><div className={styles.projectLink}>Aplikacja</div></a>
+                                <h3>{language.linkToProjectText}</h3>
+                                <a href="https://github.com/maciek1651g/repos_github">
+                                    <div className={styles.projectLink}>{language.linkToProject3ButtonText}</div>
+                                </a>
+                                <h3>{language.linkToAppProject3}</h3>
+                                <a href="https://maciek1651g-github-repos.herokuapp.com/">
+                                    <div className={styles.projectLink}>{language.linkToAppButtonTextProject3}</div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -114,7 +162,7 @@ const MainPage = () => {
                 <div className={styles.contentBlack}>
                     <div className={styles.helloContainer}>
                         <div className={styles.hello}>
-                            <p style={{fontSize: "50px", margin: "0", color: "white"}}>Kontakt</p>
+                            <p style={{fontSize: "50px", margin: "0", color: "white"}}>{language.contact}</p>
                             <ul style={{fontSize: "20px", color: "#ABABAB", listStyleType: "none"}}>
                                 <li className={styles.li}>Email: <a href="mailto:maciek1651g@gmail.com">maciek1651g@gmail.com</a></li>
                                 <li className={styles.li}>Github: <a href="https://github.com/maciek1651g">github.com/maciek1651g</a></li>
@@ -125,10 +173,16 @@ const MainPage = () => {
                 </div>
                 <div className={styles.footer}>
                     <div className={styles.hello} style={{height: "100%"}}>
-                        <p style={{margin: "0"}}>&copy; 2021 Maciej Dominiak. Wszelkie prawa zastrzeżone</p>
+                        <p style={{margin: "0"}}>&copy; 2021 Maciej Dominiak. {language.rights}</p>
                     </div>
                 </div>
             </div>
+
+            {returnTopButton?
+            <div className={styles.toTopButton} onClick={returnToTop}>
+                <p>{language.toTopTextButton}</p>
+            </div>
+            :null}
 
         </>
     )
