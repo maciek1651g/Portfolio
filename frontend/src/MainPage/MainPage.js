@@ -2,8 +2,13 @@ import styles from './style.module.css';
 import React from "react";
 import pl from "./../languages/pl"
 import en from "./../languages/en"
+import {useHistory, useLocation, useParams} from "react-router";
 
 const MainPage = () => {
+    const {lang} = useParams();
+    const history = useHistory();
+    const location = useLocation();
+
     const scrollToBottom = () => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
     }
@@ -28,12 +33,32 @@ const MainPage = () => {
         }
     });
 
+    React.useEffect(() => {
+        setLang(lang);
+    }, [location]);
+
+    const setLang = (lang) => {
+        switch (lang)
+        {
+            case "en":
+                setLanguage(en);
+                break;
+            default:
+                setLanguage(pl);
+        }
+    }
+
     const changeLanguage = () => {
-        if(language===pl) setLanguage(en); else setLanguage(pl);
+        if(language===pl) {
+            history.push("/en");
+        } else {
+            history.push("/pl");
+        }
     }
 
     const [returnTopButton, setReturnTopButton] = React.useState(false);
     const [language, setLanguage] = React.useState(pl);
+
 
     return (
         <>
@@ -75,7 +100,7 @@ const MainPage = () => {
                             <div className={styles.projectImgContainer}>
                                 <div className={styles.projectImg}>
                                     <div className={styles.projectImgContent} >
-                                        <img src="./img/xamarin.jpg" alt="app_project"/>
+                                        <img src="/img/xamarin.jpg" alt="app_project"/>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +141,7 @@ const MainPage = () => {
                             <div className={styles.projectImgContainer}>
                                 <div className={styles.projectImg}>
                                     <div className={styles.projectImgContent} >
-                                        <img src="./img/memory.jpg" alt="app_project"/>
+                                        <img src="/img/memory.jpg" alt="app_project"/>
                                     </div>
                                 </div>
                             </div>
@@ -133,7 +158,7 @@ const MainPage = () => {
                             <div className={styles.projectImgContainer}>
                                 <div className={styles.projectImg}>
                                     <div className={styles.projectImgContent} >
-                                        <img src="./img/github.png" alt="app_project"/>
+                                        <img src="/img/github.png" alt="app_project"/>
                                     </div>
                                 </div>
                             </div>

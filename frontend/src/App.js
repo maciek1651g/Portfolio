@@ -8,9 +8,12 @@ const App = () => {
       <Fragment>
         <Router>
           <Switch>
-            <Route exact path="/">
-              <MainPage />
-            </Route>
+              <Route exact path="/">
+                  <MainPage />
+              </Route>
+              <Route path="/:lang">
+                  <MainPage />
+              </Route>
           </Switch>
         </Router>
       </Fragment>
