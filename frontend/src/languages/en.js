@@ -18,7 +18,7 @@ const lang = {
         " for communicating with the API in order to upload and download information" +
         " to / from the database.",
     linkToProjectText: "Link to the project",
-    linkToProject1ButtonText: "Mobile application design",
+    linkToProject1ButtonText: "Mobile application project",
 
 
     titleProject2: "Memory game",
@@ -27,7 +27,7 @@ const lang = {
         "classic mode, or the mode in which the first card is revealed " +
         "in a random way, which significantly complicates the game. " +
         "You can save your result in the database.",
-    linkToProject2ButtonText: "Github game design",
+    linkToProject2ButtonText: "Github game project",
     linkToGameProject2: "Link to the Game",
     linkToGameButtonTextProject2: "Memory game",
 

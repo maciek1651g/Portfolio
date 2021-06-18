@@ -69,7 +69,7 @@ const MainPage = () => {
             <div className={styles.sectionHeader}>
                 <header className={styles.header}>
                     <h1>Maciej Dominiak</h1>
-                    <div style={{display: "flex", flexDirection: "row"}}>
+                    <div style={{display: "flex", flexDirection: "row", marginBottom: "15px"}}>
                         <div className={styles.contactButton} onClick={scrollToBottom}>
                             <span>
                                 {language.contact}
@@ -192,7 +192,7 @@ const MainPage = () => {
                     <div className={styles.helloContainer}>
                         <div className={styles.hello}>
                             <p style={{fontSize: "50px", margin: "0", color: "white"}}>{language.contact}</p>
-                            <ul style={{fontSize: "20px", color: "#ABABAB", listStyleType: "none"}}>
+                            <ul style={{fontSize: "20px", color: "#ABABAB", listStyleType: "none", padding: "0"}}>
                                 <li className={styles.li}>Email: <a href="mailto:maciek1651g@gmail.com">maciek1651g@gmail.com</a></li>
                                 <li className={styles.li}>Github: <a href="https://github.com/maciek1651g">github.com/maciek1651g</a></li>
                                 <li className={styles.li}>Linkedin: <a href="https://www.linkedin.com/in/maciej-dominiak-b2a99a149/">linkedin.com/maciej-dominiak</a> </li>

@@ -5,9 +5,9 @@ const lang = {
         "Wiejskiego w Warszawie na kierunku Informatyka. " +
         "Moją pasją jest programowanie. W przyszłości " +
         "zamierzam rozwijać swoją wiedzę w tej dziedzinie " +
-        "tworząc coraz to nowsze projekty. Stworzyłem tą stronę " +
+        "tworząc coraz to nowsze projekty. Stworzyłem tą stronę, " +
         "by każdy mógł zobaczyć najciekawsze projekty, w których " +
-        "uczestniczyłem, bądź w całości wykonałem sam.",
+        "uczestniczyłem, bądź które w całości wykonałem sam.",
 
     titleProject1: "Aplikacja mobilna",
     descriptionProject1: "Projekt wykonany grupowo, w 16 osób, na " +
