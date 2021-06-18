@@ -104,7 +104,7 @@ const MainPage = () => {
                             <div className={styles.projectImgContainer}>
                                 <div className={styles.projectImg}>
                                     <div className={styles.projectImgContent} >
-                                        <img src="/img/xamarin.jpg" alt="app_project"/>
+                                        <img src="/img/xamarin.jpg" alt="app_project" loading="lazy"/>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@ const MainPage = () => {
                             <div className={styles.projectImgContainer}>
                                 <div className={styles.projectImg}>
                                     <div className={styles.projectImgContent} >
-                                        <img src="/img/memory.jpg" alt="app_project"/>
+                                        <img src="/img/memory.jpg" alt="app_project" loading="lazy"/>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@ const MainPage = () => {
                             <div className={styles.projectImgContainer}>
                                 <div className={styles.projectImg}>
                                     <div className={styles.projectImgContent} >
-                                        <img src="/img/github.png" alt="app_project"/>
+                                        <img src="/img/github.png" alt="app_project" loading="lazy"/>
                                     </div>
                                 </div>
                             </div>
