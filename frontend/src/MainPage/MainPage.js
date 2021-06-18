@@ -5,6 +5,7 @@ import en from "./../languages/en"
 import {useHistory, useLocation, useParams} from "react-router";
 
 const MainPage = () => {
+    const $ = id=>document.getElementById(id);
     const {lang} = useParams();
     const history = useHistory();
     const location = useLocation();
@@ -38,13 +39,16 @@ const MainPage = () => {
     }, [location]);
 
     const setLang = (lang) => {
+        const htmlTag =  $("html");
         switch (lang)
         {
             case "en":
                 setLanguage(en);
+                htmlTag.lang="en";
                 break;
             default:
                 setLanguage(pl);
+                htmlTag.lang="pl";
         }
     }
 

@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="92fd7413-1d76-42a2-a32f-bfcac3b4e7ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/MainPage/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/MainPage/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/MainPage/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/MainPage/style.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +25,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/public/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Maciek\Documents\github\portfolio\views" />
       <recent name="C:\Users\Maciek\Documents\github\portfolio\frontend\public\img" />
       <recent name="C:\Users\Maciek\Documents\github\portfolio\frontend\src" />
       <recent name="C:\Users\Maciek\Documents\github\portfolio" />
@@ -56,7 +57,9 @@
       <workItem from="1622230576594" duration="1910000" />
       <workItem from="1623696079903" duration="5407000" />
       <workItem from="1623866916973" duration="4047000" />
-      <workItem from="1623960725697" duration="1136000" />
+      <workItem from="1623960725697" duration="3421000" />
+      <workItem from="1623964200050" duration="177000" />
+      <workItem from="1624038866431" duration="486000" />
     </task>
     <servers />
   </component>
