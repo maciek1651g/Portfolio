@@ -1,2 +1,2 @@
-# portfolio
-My portfolio https://maciej-dominiak.herokuapp.com/
+# Portfolio
+My portfolio https://maciek1651g.github.io/portfolio/
