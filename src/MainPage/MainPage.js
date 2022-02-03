@@ -7,6 +7,8 @@ import ArrowUpButton from "./Assets/ArrowUpButton";
 import Header from "./Header";
 import Footer from "./Footer";
 import Introduction from "./Introduction";
+import WhiteSection from "./Assets/WhiteSection";
+import BlackSection from "./Assets/BlackSection";
 
 const MainPage = () => {
     const $ = (id) => document.getElementById(id);
@@ -55,107 +57,39 @@ const MainPage = () => {
 
             <Introduction language={language} />
 
-            <div className={styles.sectionWhite}>
-                <div className={styles.contentWhite}>
-                    <div className={styles.projectContainer}>
-                        <div className={styles.project}>
-                            <div className={styles.projectImgContainer}>
-                                <div className={styles.projectImg}>
-                                    <div className={styles.projectImgContent}>
-                                        <img
-                                            src="img/xamarin.jpg"
-                                            alt="app_project"
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={styles.projectDescription}>
-                                <h2>{language.titleProject1}</h2>
-                                <p>{language.descriptionProject1}</p>
-                                <h3>{language.linkToProjectText}</h3>
-                                <a href="https://github.com/maciek1651g/inwentaryzacja">
-                                    <div className={styles.projectLink}>
-                                        {language.linkToProject1ButtonText}
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <WhiteSection
+                imgSrc={"img/xamarin.jpg"}
+                projectTitle={language.titleProject1}
+                projectDescription={language.descriptionProject1}
+                linkToProjectText={language.linkToProjectText}
+                linkToProject={"https://github.com/maciek1651g/inwentaryzacja"}
+                linkToProjectButtonText={language.linkToProject1ButtonText}
+            />
 
-            <div className={styles.sectionBlackMiddle}>
-                <div className={styles.contentBlack}>
-                    <div className={styles.projectContainer}>
-                        <div className={styles.project}>
-                            <div className={styles.projectDescription}>
-                                <h2>{language.titleProject2}</h2>
-                                <p>{language.descriptionProject2}</p>
-                                <h3>{language.linkToProjectText}</h3>
-                                <a href="https://github.com/maciek1651g/memory">
-                                    <div className={styles.projectLink}>
-                                        {language.linkToProject2ButtonText}
-                                    </div>
-                                </a>
-                                <h3>{language.linkToGameProject2}</h3>
-                                <a href="http://memory.42web.io/">
-                                    <div className={styles.projectLink}>
-                                        {language.linkToGameButtonTextProject2}
-                                    </div>
-                                </a>
-                            </div>
-                            <div className={styles.projectImgContainer}>
-                                <div className={styles.projectImg}>
-                                    <div className={styles.projectImgContent}>
-                                        <img
-                                            src="img/memory.jpg"
-                                            alt="app_project"
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <BlackSection
+                imgSrc={"img/memory.jpg"}
+                projectTitle={language.titleProject2}
+                projectDescription={language.descriptionProject2}
+                linkToProjectText={language.linkToProjectText}
+                linkToProject={"https://github.com/maciek1651g/memory"}
+                linkToProjectButtonText={language.linkToProject2ButtonText}
+                linkToAppProjectText={language.linkToGameProject2}
+                linkToAppProject={"http://memory.42web.io/"}
+                linkToAppProjectButtonText={language.linkToGameButtonTextProject2}
+            />
 
-            <div className={styles.sectionWhite}>
-                <div className={styles.contentWhite}>
-                    <div className={styles.projectContainer}>
-                        <div className={styles.project}>
-                            <div className={styles.projectImgContainer}>
-                                <div className={styles.projectImg}>
-                                    <div className={styles.projectImgContent}>
-                                        <img
-                                            src="img/github.png"
-                                            alt="app_project"
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={styles.projectDescription}>
-                                <h2>{language.titleProject3}</h2>
-                                <p>{language.descriptionProject3}</p>
-                                <h3>{language.linkToProjectText}</h3>
-                                <a href="https://github.com/maciek1651g/repos_github">
-                                    <div className={styles.projectLink}>
-                                        {language.linkToProject3ButtonText}
-                                    </div>
-                                </a>
-                                <h3>{language.linkToAppProject3}</h3>
-                                <a href="https://maciek1651g-github-repos.herokuapp.com/">
-                                    <div className={styles.projectLink}>
-                                        {language.linkToAppButtonTextProject3}
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <WhiteSection
+                imgSrc={"img/github.png"}
+                projectTitle={language.titleProject3}
+                projectDescription={language.descriptionProject3}
+                linkToProjectText={language.linkToProjectText}
+                linkToProject={"https://github.com/maciek1651g/repos_github"}
+                linkToProjectButtonText={language.linkToProject3ButtonText}
+                linkToAppProjectText={language.linkToAppProject3}
+                linkToAppProject={"https://maciek1651g-github-repos.herokuapp.com/"}
+                linkToAppProjectButtonText={language.linkToAppButtonTextProject3}
+            />
+
             <Footer language={language} />
             <ArrowUpButton isVisible={returnTopButton} />
         </>

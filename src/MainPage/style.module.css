@@ -208,21 +208,6 @@ body
 	font-size: 19px;
 }
 
-.projectDescription > a
-{
-	font-size: 19px;
-	text-decoration: none;
-	color: black;
-}
-
-.projectLink
-{
-	background-color: #4B6CC1;
-	padding: 20px 15px;
-	border-radius: 20px;
-	color: white;
-}
-
 @media only screen and (max-width: 900px) {
 	.project
 	{

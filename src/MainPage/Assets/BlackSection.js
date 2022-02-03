@@ -2,7 +2,7 @@ import styles from "../style.module.css";
 import React from "react";
 import { Button } from "@mui/material";
 
-const WhiteSection = ({
+const BlackSection = ({
     imgSrc,
     projectTitle,
     projectDescription,
@@ -14,21 +14,10 @@ const WhiteSection = ({
     linkToAppProjectButtonText,
 }) => {
     return (
-        <div className={styles.sectionWhite}>
-            <div className={styles.contentWhite}>
+        <div className={styles.sectionBlackMiddle}>
+            <div className={styles.contentBlack}>
                 <div className={styles.projectContainer}>
                     <div className={styles.project}>
-                        <div className={styles.projectImgContainer}>
-                            <div className={styles.projectImg}>
-                                <div className={styles.projectImgContent}>
-                                    <img
-                                        src={imgSrc}
-                                        alt="project_img"
-                                        loading="lazy"
-                                    />
-                                </div>
-                            </div>
-                        </div>
                         <div className={styles.projectDescription}>
                             <h2>{projectTitle}</h2>
                             <p>{projectDescription}</p>
@@ -59,6 +48,17 @@ const WhiteSection = ({
                                 </>
                             )}
                         </div>
+                        <div className={styles.projectImgContainer}>
+                            <div className={styles.projectImg}>
+                                <div className={styles.projectImgContent}>
+                                    <img
+                                        src={imgSrc}
+                                        alt="app_project"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,4 +66,4 @@ const WhiteSection = ({
     );
 };
 
-export default WhiteSection;
+export default BlackSection;
