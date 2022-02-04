@@ -1,20 +1,8 @@
 import styles from "./style.module.css";
 import React from "react";
-import pl from "../languages/pl";
-import { useHistory } from "react-router";
 import { Button, Stack } from "@mui/material";
 
-const Header = ({ language }) => {
-    const history = useHistory();
-
-    const changeLanguage = () => {
-        if (language === pl) {
-            history.push("/en");
-        } else {
-            history.push("/pl");
-        }
-    };
-
+const Header = ({ language, toggleLanguage }) => {
     const scrollToBottom = () => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     };
@@ -34,7 +22,7 @@ const Header = ({ language }) => {
                     <Button
                         variant="contained"
                         size="large"
-                        onClick={changeLanguage}
+                        onClick={toggleLanguage}
                     >
                         {language.changeLanguageText}
                     </Button>
