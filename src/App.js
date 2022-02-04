@@ -23,10 +23,10 @@ const App = () => {
             <Fragment>
                 <Router>
                     <Switch>
-                        <Route exact path="/">
+                        <Route path="/:lang">
                             <MainPage />
                         </Route>
-                        <Route path="/:lang">
+                        <Route path="*">
                             <MainPage />
                         </Route>
                     </Switch>

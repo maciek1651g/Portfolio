@@ -58,7 +58,7 @@ const MainPage = () => {
             <Introduction language={language} />
 
             <WhiteSection
-                imgSrc={"img/xamarin.jpg"}
+                imgSrc={"portfolio/img/xamarin.jpg"}
                 projectTitle={language.titleProject1}
                 projectDescription={language.descriptionProject1}
                 linkToProjectText={language.linkToProjectText}
@@ -67,7 +67,7 @@ const MainPage = () => {
             />
 
             <BlackSection
-                imgSrc={"img/memory.jpg"}
+                imgSrc={"portfolio/img/memory.jpg"}
                 projectTitle={language.titleProject2}
                 projectDescription={language.descriptionProject2}
                 linkToProjectText={language.linkToProjectText}
@@ -79,7 +79,7 @@ const MainPage = () => {
             />
 
             <WhiteSection
-                imgSrc={"img/github.png"}
+                imgSrc={"portfolio/img/github.png"}
                 projectTitle={language.titleProject3}
                 projectDescription={language.descriptionProject3}
                 linkToProjectText={language.linkToProjectText}
