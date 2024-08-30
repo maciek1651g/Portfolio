@@ -195,9 +195,8 @@ body {
         width: 100%;
     }
 
-@media only screen and (max-width: 500px) {
-	.header
-	{
-		flex-direction: column;
-	}
+    .header {
+        flex-direction: column;
+        padding: 0 0 16px 0;
+    }
 }
