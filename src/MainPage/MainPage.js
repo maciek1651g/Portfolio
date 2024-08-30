@@ -62,10 +62,14 @@ const MainPage = () => {
                 projectTitle={language.titleProject3}
                 projectDescription={language.descriptionProject3}
                 linkToProjectText={language.linkToProjectText}
-                linkToProject={"https://github.com/maciek1651g/repos_github"}
+                linkToProject={
+                    "https://github.com/maciek1651g/github_user_repository_browser"
+                }
                 linkToProjectButtonText={language.linkToProject3ButtonText}
                 linkToAppProjectText={language.linkToAppProject3}
-                linkToAppProject={"https://maciek1651g-github-repos.herokuapp.com/"}
+                linkToAppProject={
+                    "https://maciek1651g.github.io/github_user_repository_browser"
+                }
                 linkToAppProjectButtonText={language.linkToAppButtonTextProject3}
             />
 
@@ -90,8 +94,6 @@ const MainPage = () => {
                     "https://github.com/maciek1651g/zapamietywarka-wiszek"
                 }
                 linkToProjectButtonText={language.linkToProject5ButtonText}
-                linkToAppProjectText={language.linkToAppProject5}
-                linkToAppProject={"https://menager-fiszek.herokuapp.com/"}
                 linkToAppProjectButtonText={language.linkToAppButtonTextProject5}
             />
 
