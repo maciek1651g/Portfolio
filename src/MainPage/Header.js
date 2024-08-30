@@ -10,18 +10,18 @@ const Header = ({ language, toggleLanguage }) => {
     return (
         <div className={styles.sectionHeader}>
             <header className={styles.header}>
-                <h1>Maciej Dominiak</h1>
+                <h1 className={styles.headerName}>Maciej Dominiak</h1>
                 <Stack direction="row" spacing={2}>
                     <Button
                         variant="contained"
-                        size="large"
+                        size="medium"
                         onClick={scrollToBottom}
                     >
                         {language.contact}
                     </Button>
                     <Button
                         variant="contained"
-                        size="large"
+                        size="medium"
                         onClick={toggleLanguage}
                     >
                         {language.changeLanguageText}
