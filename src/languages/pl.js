@@ -2,13 +2,7 @@ const lang = {
     contact: "Kontakt",
     changeLanguageText: "Change language",
     description:
-        "Jestem studentem Szkoły Głównej Gospodarstwa " +
-        "Wiejskiego w Warszawie na kierunku Informatyka. " +
-        "Moją pasją jest programowanie. W przyszłości " +
-        "zamierzam rozwijać swoją wiedzę w tej dziedzinie " +
-        "tworząc coraz to nowsze projekty. Stworzyłem tą stronę, " +
-        "by każdy mógł zobaczyć najciekawsze projekty, w których " +
-        "uczestniczyłem, bądź które w całości wykonałem sam.",
+        "Programowanie to dla mnie więcej niż zawód – to moja pasja. Uwielbiam rozwiązywać problemy, tworzyć wydajne i estetyczne rozwiązania oraz uczyć się nowych technologii. Każdy projekt traktuję jako okazję do rozwijania swoich umiejętności i poszerzania wiedzy.",
 
     titleProject1: "Aplikacja mobilna",
     descriptionProject1:

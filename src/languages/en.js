@@ -2,12 +2,7 @@ const lang = {
     contact: "Contact",
     changeLanguageText: "Zmień język",
     description:
-        "I am a student of the Warsaw University of Life " +
-        "Sciences in the field of Computer Science. Programming is " +
-        "my passion. In the future, I intend to develop my knowledge" +
-        " in this field by creating newer and newer projects. " +
-        "I created this website so that everyone could see the most " +
-        "interesting projects in which I participated, or I did all by myself.",
+        "Programming is more than just a profession for me – it’s my passion. I love solving problems, creating efficient and elegant solutions, and learning new technologies. I approach every project as an opportunity to develop my skills and expand my knowledge.",
 
     titleProject1: "Mobile application",
     descriptionProject1:
